@@ -82,13 +82,15 @@ button {
     }
 
     &:focus {
-        outline: 0; // Better check accessibility
+        outline: 0;
+        /* Better check accessibility */
 
         /* The value fade-ins that appear */
         &::after {
             animation: zoom 1s;
             animation-iteration-count: 1;
-            animation-fill-mode: both; // Fix Firefox from firing animations only once
+            animation-fill-mode: both;
+            /* Fix Firefox from firing animations only once */
             content: attr(data-num);
             cursor: default;
             font-size: 100px;
